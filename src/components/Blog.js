@@ -11,7 +11,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
     navigate(`../myBlogs/${id}`);
   }
   const deleteRequest = async () => {
-    const res = await axios.delete(`https://gentle-ridge-43765.herokuapp.com/api/blog/${id}`).catch(err=>console.log(err));
+    const res = await axios.delete(`https://blog-app-backend-g9sza1e1h-divyanshsingh786.vercel.app/api/blog/${id}`).catch(err=>console.log(err));
     const data = await res.data;
     return data;
   }
