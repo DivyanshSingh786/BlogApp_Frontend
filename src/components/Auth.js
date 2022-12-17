@@ -17,7 +17,7 @@ const Auth = () => {
     }));
   };
   const sendRequest = async (type = "login") => {
-    const res = await axios.post(`https://gentle-ridge-43765.herokuapp.com/api/user/${type}`, {
+    const res = await axios.post(`https://blog-app-backend-g9sza1e1h-divyanshsingh786.vercel.app/api/user/${type}`, {
       name: inputs.name,
       email: inputs.email,
       password: inputs.password
