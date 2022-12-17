@@ -5,7 +5,7 @@ import Blog from './Blog';
 const Blogs = () => {
   const [blogs, setBlogs] = useState();
   const sendRequest = async () => {
-    const res = await axios.get("https://gentle-ridge-43765.herokuapp.com/api/blog").catch((err)=>console.log(err));
+    const res = await axios.get("https://blog-app-backend-g9sza1e1h-divyanshsingh786.vercel.app/api/blog").catch((err)=>console.log(err));
     const data = await res.data;
     return data;
   }
