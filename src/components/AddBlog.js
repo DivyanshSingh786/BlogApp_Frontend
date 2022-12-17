@@ -14,7 +14,7 @@ const AddBlog = () => {
     }));
   };
   const sendRequest = async () => {
-    const res = await axios.post("https://gentle-ridge-43765.herokuapp.com/api/blog/add", {
+    const res = await axios.post("https://blog-app-backend-g9sza1e1h-divyanshsingh786.vercel.app/api/blog/add", {
       title: inputs.title,
       description: inputs.description,
       image: inputs.imageURL,
