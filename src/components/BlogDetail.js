@@ -16,7 +16,7 @@ const BlogDetail = () => {
     }));
   };
   const fetchDetails = async () => {
-    const res = await axios.get(`https://gentle-ridge-43765.herokuapp.com/api/blog/${id}`).catch((err) => console.log(err));
+    const res = await axios.get(`https://blog-app-backend-g9sza1e1h-divyanshsingh786.vercel.app/api/blog/${id}`).catch((err) => console.log(err));
     const data = await res.data;
     return data;
   }
@@ -28,7 +28,7 @@ const BlogDetail = () => {
     })
   }, [id]);
   const sendRequest = async () => {
-    const res = await axios.put(`https://gentle-ridge-43765.herokuapp.com/api/blog/update/${id}`, {
+    const res = await axios.put(`https://blog-app-backend-g9sza1e1h-divyanshsingh786.vercel.app/api/blog/update/${id}`, {
       title: inputs.title,
       description: inputs.description
     }).catch(err=>console.log(err));
